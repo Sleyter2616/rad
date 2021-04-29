@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
-import {Table, Container, Form, Button} from 'react-bootstrap'
+import {Table, Form, Button} from 'react-bootstrap'
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd'
-import TableRow from '../components/TableRow'
 
 const TableScreen = () => {
 	const apiURL = 'https://jsonplaceholder.typicode.com/todos'
