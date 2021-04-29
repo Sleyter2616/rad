@@ -28,7 +28,7 @@ const TableScreen = () => {
 			const newResult = {userId, title, completed, id: newId}
 			let newResults = results
 			newResults.push(newResult)
-			console.log('UPDATING RESULT')
+
 			setResults(newResults)
 			setUserId(0)
 			setTitle('')
@@ -42,9 +42,7 @@ const TableScreen = () => {
 		res.splice(destinationIndex, 0, res.splice(sourceIndex, 1)[0])
 		setResults(res)
 	}
-	// useEffect(() => {
-	// 	console.log('results changed')
-	// }, [results])
+
 	return (
 		<div>
 			{results.length === 0 && (
